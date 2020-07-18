@@ -315,7 +315,7 @@
 		11A45D1224C1711600733BF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TPZ539LNM7;
 				INFOPLIST_FILE = WeatherApp/SupportingFiles/Info.plist;
@@ -333,7 +333,7 @@
 		11A45D1324C1711600733BF2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TPZ539LNM7;
 				INFOPLIST_FILE = WeatherApp/SupportingFiles/Info.plist;
