@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MainVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="WeatherApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ihfnlpbze7o01" translatesAutoresizingMaskIntoConstraints="NO" id="qlR-tK-ksQ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="jh4-qy-zAU">
+                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="G1z-Qg-go9">
+                                <rect key="frame" x="8" y="401" width="398" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temp" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QkE-Jc-fHB">
+                                <rect key="frame" x="8" y="486" width="398" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пожалуйста введите название города" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sqg-xl-LJi">
+                                <rect key="frame" x="8" y="240" width="398" height="82"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QkE-Jc-fHB" secondAttribute="trailing" constant="8" id="2dQ-tK-Z6t"/>
+                            <constraint firstItem="jh4-qy-zAU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4SL-6p-eIa"/>
+                            <constraint firstAttribute="trailing" secondItem="sqg-xl-LJi" secondAttribute="trailing" constant="8" id="F4J-aG-MOi"/>
+                            <constraint firstItem="sqg-xl-LJi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="XUW-hV-lLr"/>
+                            <constraint firstItem="G1z-Qg-go9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="ZmA-gY-AgC"/>
+                            <constraint firstItem="G1z-Qg-go9" firstAttribute="top" secondItem="jh4-qy-zAU" secondAttribute="bottom" constant="301" id="as9-Wu-GDP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="G1z-Qg-go9" secondAttribute="trailing" constant="8" id="dFI-Lx-Ase"/>
+                            <constraint firstItem="jh4-qy-zAU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="dsA-NK-zgW"/>
+                            <constraint firstItem="QkE-Jc-fHB" firstAttribute="top" secondItem="G1z-Qg-go9" secondAttribute="bottom" constant="25" id="oWN-S3-QDI"/>
+                            <constraint firstItem="QkE-Jc-fHB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="qeZ-vn-8AV"/>
+                            <constraint firstItem="jh4-qy-zAU" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="sRX-Hb-lpm"/>
+                            <constraint firstItem="sqg-xl-LJi" firstAttribute="top" secondItem="jh4-qy-zAU" secondAttribute="bottom" constant="140" id="tAu-8x-hgn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="cityLabel" destination="G1z-Qg-go9" id="MVU-Zi-G96"/>
+                        <outlet property="pleaseWriteTextLabel" destination="sqg-xl-LJi" id="aE0-tH-eyo"/>
+                        <outlet property="searchBar" destination="jh4-qy-zAU" id="f7f-Xn-9J2"/>
+                        <outlet property="tempLabel" destination="QkE-Jc-fHB" id="56I-rs-84N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ihfnlpbze7o01" width="1080" height="2112"/>
+    </resources>
+</document>
